@@ -199,7 +199,7 @@
       <path value="$PROJECT_DIR$/vendor/mews/captcha" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="229" />
     <option name="y" value="73" />
     <option name="width" value="1281" />
