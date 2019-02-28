@@ -14,12 +14,12 @@ class TopicsController extends Controller
         $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
-	public function index()
-	{
-		$topics = Topic::with('user', 'category')->paginate(30);
-		return view('topics.index', compact('topics'));
-	}
 
+    public function index(Request $request, Topic $topic)
+    {
+        $topics = $topic->withOrder($request->order)->paginate(20);
+        return view('topics.index', compact('topics'));
+    }
     public function show(Topic $topic)
     {
         return view('topics.show', compact('topic'));
@@ -57,4 +57,7 @@ class TopicsController extends Controller
 
 		return redirect()->route('topics.index')->with('message', 'Deleted successfully.');
 	}
+
+
+
 }
