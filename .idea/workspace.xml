@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dd49e2b-36e9-4285-86a7-8f13103ced7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8dd49e2b-36e9-4285-86a7-8f13103ced7f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,6 +258,7 @@
       <path value="$PROJECT_DIR$/vendor/caouecs/laravel-lang" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/mews/captcha" />
+      <path value="$PROJECT_DIR$/vendor/summerblue/generator" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -486,12 +485,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551228287738</updated>
       <workItem from="1551228294230" duration="5486000" />
-      <workItem from="1551314713972" duration="229000" />
+      <workItem from="1551314713972" duration="823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24923000" />
+    <option name="totallyTimeSpent" value="25517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="373" y="90" width="1281" height="904" extended-state="0" />
