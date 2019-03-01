@@ -29,17 +29,20 @@ return array(
         * 'Analytics' => ['E-Commerce' => 'page.pages.analytics'],
         * ]
         */
-        'menu' => [
-            '用户与权限' => [
-                'users',
-            ],
+    'menu' => [
+        '用户与权限' => [
+            'users',
+            'roles',
+            'permissions',
         ],
- /*
- * 权限控制的回调函数。
- *
- * 此回调函数需要返回 true 或 false ，用来检测当前用户是否有权限访问后台。
- * `true` 为通过，`false` 会将页面重定向到 `login_path` 选项定义的 URL 中。
- */
+    ],
+
+    /*
+    * 权限控制的回调函数。
+    *
+    * 此回调函数需要返回 true 或 false ，用来检测当前用户是否有权限访问后台。
+    * `true` 为通过，`false` 会将页面重定向到 `login_path` 选项定义的 URL 中。
+    */
     'permission' => function () {
         // 只要是能管理内容的用户，就允许访问后台
         return Auth::check() && Auth::user()->can('manage_contents');
@@ -65,4 +68,6 @@ return array(
     'global_rows_per_page' => 20,
     // 可选的语言，如果不为空，将会在页面顶部显示『选择语言』按钮
     'locales' => [],
+
+
 );
